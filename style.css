@@ -1,14 +1,74 @@
+/* TODO:
+- add google font
+- add color variables
+*/
+:root {
+  --textColor : red;
+  --background-color: blue;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+.header-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.header-elements > * {
+  max-width: 10%;
+  padding: 5px;
+  background-color: var(--background-color);
+  /* padding: 2px; */
+}
+/* Navbar all categories */
+.navbar {
+  min-width: 10%;
+}
 .bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  border-radius: 5px;
+  width: 90%;
+  height: 22%;
+  border-radius: 10px;
   background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
+  margin: 5% 0;
+}
+
+.main-nav {
+  list-style: none;
+  display: none;
+}
+.nav-links {
+  /* align-self: flex-end; */
+  text-decoration: none;
+  color: var(--textColor);
+  
+}
+
+.main-nav li {
+  text-align: left;
+  margin: 10px;
+}
+
+.navbar-toggle {
+  /* position: absolute;
+  top: 10px;
+  left: 20px; */
+  /* padding: 2px; */
+  cursor: pointer;
+}
+#menu-toggle {
+  display: none;
+}
+#menu-toggle:checked + ul.main-nav {
+  /* align-self: flex-end; */
+  display: block;
+}
+
+.logo {
+max-width: 60%;
+object-fit: contain;
 }
