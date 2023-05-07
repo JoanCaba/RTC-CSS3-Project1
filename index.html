@@ -11,8 +11,10 @@
 
 <body>
   <header>
-    <!-- Todas las categorias -->
-    <div class="header-elements">
+    <div class="header-elements-container">
+      <!-- Logo -->
+      <img class="logo" src="./Assets/logo.png" alt="CabaBuilds logo">
+      <!-- All categories -->
       <nav class="navbar">
         <label class="navbar-toggle" for="menu-toggle">
           <div class="bar1"></div>
@@ -20,51 +22,113 @@
           <div class="bar3"></div>
         </label>
       </nav>
-      <!-- Logo -->
-      <img class="logo" src="./Assets/logo.png" alt="CabaBuilds logo">
+
       <!-- Search -->
       <div>
-        <label for="search"></label>
-        <input type="button" id="search" placeholder="Buscar">
-        <nav class="navbar">
-          <label class="navbar-toggle" for="search"></label>
-          <a href="#">Search</a>
-          <input type="checkbox" id="search" placeholder="Buscar">
-          <ul class="main-nav">
-            <li></li>
-          </ul>
-
-
-        </nav>
+        <label class="navbar-toggle" for="search-toggle">
+          <img src="#" alt="Search">
+        </label>
       </div>
-      <!-- Mi cuenta -->
-
-      <a href="#" rel="nofollow" title="Mi cuenta">
+      <!-- My account -->
+      <a href="#" rel="nofollow" title="My account">
         <img src="#" alt="My account">
       </a>
-
-
-      <!-- Mi cesta -->
-      <a href="#" rel="nofollow" title="Mi cesta">
+      <!-- My cart -->
+      <a href="#" rel="nofollow" title="My cart">
         <img src="#" alt="My cart">
       </a>
     </div>
     <!-- toggled elements-->
     <div>
-      <p>SEARCH</p>
-    </div>
-    <div class="header-toggle-categories">
-      <input type="checkbox" id="menu-toggle" placeholder="Todas las categorias" />
-      <ul class="main-nav">
-        <li> <a href="#" class="nav-links">Categoria</a></li>
-        <li> <a href="#" class="nav-links">Categoria</a></li>
-        <li> <a href="#" class="nav-links">Categoria</a></li>
-        <li> <a href="#" class="nav-links">Categoria</a></li>
-      </ul>
-    </div>
-  </header>
+      <input type="checkbox" id="search-toggle" class="input-toggle">
+      <div class="search-nav">
+        <p>SEARCH </p>
+      </div>
+      <div class="header-toggle-categories">
+        <input type="checkbox" id="menu-toggle" class="input-toggle" />
+        <div class="main-nav">
+          <div class="categories">
+            <ul>
+              <li>
+                <label for="components-checked">ee
+                  <input class="input-toggle5 category-check-background" name="category-check-background" type="radio"
+                    id="components-checked" checked />
+                  <label class="navbar-toggle" for="components-toggle">Components</label>
+                </label>
 
-  <main></main>
+
+              </li>
+              <li>
+                <label for="computers-checked">ee
+                  <input class="input-toggle5 category-check-background" name="category-check-background" type="radio"
+                    id="computers-checked" />
+                  <label class="navbar-toggle" for="computers-toggle">Computers</label>ss
+                </label>
+              </li>
+              <li>
+                <label for="peripherals-checked">e
+                  <input class="input-toggle5 category-check-background" name="category-check-background" type="radio"
+                    id="peripherals-checked" />
+                  <label class="navbar-toggle" for="peripherals-toggle">Peripherals</label>ss
+                </label>
+              </li>
+              <li>
+                <label for="gaming-checked">ee
+                  <input class="input-toggle5 category-check-background" name="category-check-background" type="radio"
+                    id="gaming-checked" />
+                  <label class="navbar-toggle" for="gaming-toggle">Gaming</label>ss
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="sub-categories">
+
+            <input type="radio" id="components-toggle" name="category-toggle" class="input-toggle" checked />
+            <div class="components-nav">
+              <ul>
+                <li> <a href="#" class="nav-links">Components</a></li>
+                <li> <a href="#" class="nav-links">Components</a></li>
+                <li> <a href="#" class="nav-links">Components</a></li>
+                <li> <a href="#" class="nav-links">Components</a></li>
+                <li> <a href="#" class="nav-links">Components</a></li>
+              </ul>
+            </div>
+            <input type="radio" id="computers-toggle" name="category-toggle" class="input-toggle" />
+            <div class="computers-nav">
+              <ul>
+                <li> <a href="#" class="nav-links">Computers</a></li>
+                <li> <a href="#" class="nav-links">Computers</a></li>
+                <li> <a href="#" class="nav-links">Computers</a></li>
+                <li> <a href="#" class="nav-links">Computers</a></li>
+                <li> <a href="#" class="nav-links">Computers</a></li>
+                <li> <a href="#" class="nav-links">Computers</a></li>
+              </ul>
+            </div>
+            <input type="radio" id="peripherals-toggle" name="category-toggle" class="input-toggle" />
+            <div class="peripherals-nav">
+              <ul>
+                <li> <a href="#" class="nav-links">Peripherals</a></li>
+                <li> <a href="#" class="nav-links">Peripherals</a></li>
+                <li> <a href="#" class="nav-links">Peripherals</a></li>
+                <li> <a href="#" class="nav-links">Peripherals</a></li>
+              </ul>
+            </div>
+            <input type="radio" id="gaming-toggle" name="category-toggle" class="input-toggle" />
+            <div class="gaming-nav">
+              <ul>
+                <li> <a href="#" class="nav-links">Gaming</a></li>
+                <li> <a href="#" class="nav-links">Gaming</a></li>
+                <li> <a href="#" class="nav-links">Gaming</a></li>
+                <li> <a href="#" class="nav-links">Gaming</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+  <main>
+    <h1> TEST</h1>
+  </main>
   <footer></footer>
 </body>
 
