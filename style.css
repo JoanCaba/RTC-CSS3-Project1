@@ -3,7 +3,7 @@
 - add color variables
 */
 :root {
-  --textColor : red;
+  --textColor : white;
   --background-color: blue;
 }
 * {
@@ -58,16 +58,9 @@ li {
   display: block;
 }
 
-.category-check-background:checked + label.navbar-toggle {
-  background-color:pink;
-}
-
 #menu-toggle:checked + div.main-nav {
   display: flex;
   flex-direction: row;
-}
-#menu-toggle:not(:checked) ~ div {
-  display: none;
 }
 
 .logo {
@@ -76,24 +69,20 @@ li {
   padding: 5px; 
 }
 
-/* .logo {
-max-width: 60%;
-object-fit: contain;
-} */
-
-/* #components-toggle:checked + div.components-nav {
-  display: block;
+.category {
+  
+  margin: 0;
 }
-#computers-toggle:checked + div.computers-nav {
+.category-label {
   display: block;
+  width: 100%;
+  height: 100%;
 }
-#peripherals-toggle:checked + div.peripherals-nav {
-  display: block;
-}
-#gaming-toggle:checked + div.gaming-nav {
-  display: block;
+ .category:hover  .category-label {
+  background-color: red;
 }
 
-#search-toggle:checked + div.search-nav {
-  display: block;
-} */
+.sub-categories {
+  color: white;
+  background-color: red;
+}
