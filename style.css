@@ -1,6 +1,5 @@
 /* TODO:
 - add google font
-- add color variables
 */
 :root {
 
@@ -31,16 +30,17 @@ body {
    background-color: var(--background-color);
 }
 
-.header-elements-container .header-icon, .navbar {
+.header-elements-container .header-icon{
   max-width: 50px;
   max-height: 50px;
   border: 1px solid var(--background-color-secondary);
 
 }
 
-.logo, .header-icon img {
+.logo, .header-icon img, .search-form img {
   object-fit: contain;
   max-width: 100%;
+  max-height: 100%;
   padding: 5px; 
 }
 
@@ -57,9 +57,10 @@ body {
   margin: 5px;
 }
 
-.main-nav,.components-nav,.search-nav,.peripherals-nav,.computers-nav,.components-nav,.gaming-nav{
+.categories-nav,.components-nav,.search-nav,.peripherals-nav,.computers-nav,.components-nav,.gaming-nav{
   display: none;
 }
+
 .nav-links {
   text-decoration: none;
   color: var(--textColor);
@@ -71,28 +72,66 @@ li {
   margin: 10px;
 }
 
-.input-toggle{
+.input-toggle, .category-toggle{
   display: none;
+}
+.category-toggle:hover + div {
+  display: block;
 }
 .input-toggle:checked + div{
   display: block;
 }
 
-#menu-toggle:checked + div.main-nav {
+#menu-toggle:checked + div.categories-nav {
   display: flex;
   flex-direction: row;
 }
-
 
 .category {
   background-color: var(--background-color);
   margin: 0;
 }
+
 .category-label {
   display: block;
   width: 100%;
   height: 100%;
+  padding-left: 15px;
 }
- .category:hover  .category-label, .sub-categories {
+
+ .category:hover  .category-label{
   background-color: var(--background-color-secondary);
+  border-right: none;
+  border-top: 1px solid #1A2A45;
+  border-bottom: 1px solid #1A2A45;
+  scale: 102%;
 }
+.sub-categories{
+  background-color: var(--background-color-secondary);
+  border: 1px solid #1A2A45;;
+}
+.navbar-toggle:checked {
+  background-color: #1A2A45;
+}
+
+.search-nav{
+  width: 100%;
+  padding: 0.5em;
+  background-color: var(--background-color);
+}
+.search-form button{
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+ background-color: var(--background-color-secondary);
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+
+ }
+ .search-form input {
+  min-width: 90%;
+  padding-left: 0.5em;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+ }
