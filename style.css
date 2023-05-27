@@ -13,6 +13,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: var(--text-color);
 }
 
 body {
@@ -134,4 +135,39 @@ li {
   padding-left: 0.5em;
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
+ }
+.products-list {
+  background-color: var(--background-color);
+  margin: 20px;
+  padding: 5px;
+  border-radius: 2%;
+}
+
+ .products-list ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  overflow: auto;
+ }
+ .products-list > h2 {
+  text-align: center;
+ }
+ .products-list a {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 3%;
+  border: 1px solid var(--text-color);
+  padding: 5px;
+  text-decoration: none;
+  width: 40vw;
+ }
+ .products-list img {
+  max-width: 100%;
+  max-height: 100%;
+ }
+ .product-name {
+  max-width: 40vw;
  }
