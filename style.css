@@ -1,5 +1,11 @@
 /* TODO:
 - add google font
+- add 10 products
+- add brands/create new section?
+- finish footer
+- start responsive
+    - from 375px to 768px
+    - greater than 768px
 */
 :root {
 
@@ -138,7 +144,7 @@ li {
  }
 .products-list {
   background-color: var(--background-color);
-  margin: 20px;
+  margin: 5px;
   padding: 5px;
   border-radius: 2%;
 }
@@ -147,8 +153,9 @@ li {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   overflow: auto;
+  
  }
  .products-list > h2 {
   text-align: center;
@@ -156,18 +163,30 @@ li {
  .products-list a {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   flex-wrap: wrap;
   background-color: white;
   border-radius: 3%;
   border: 1px solid var(--text-color);
-  padding: 5px;
+  padding: 0 2px;
   text-decoration: none;
   width: 40vw;
+  height: 18rem;
+  word-wrap: break-word;
+  align-items: center;
+  box-shadow:inset 0px -8rem 100px -30px var(--middle-color);
  }
  .products-list img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 70%;
+  max-height: 70%;
  }
  .product-name {
-  max-width: 40vw;
+  font-size: small;
+  text-align: center;
+ }
+ .product-price {
+  font-size: large;
+  color: rgb(143, 8, 42);
+  font-weight:bolder;
+  font-style: oblique;
  }
