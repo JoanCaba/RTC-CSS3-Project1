@@ -224,3 +224,36 @@ a {
   height: 1rem;
   right: 16px;
  }
+
+@media screen and (min-width: 375px) and (max-width: 678px){
+  .logo{
+    min-width: 100%;
+  }
+
+}
+@media screen and (min-width: 678px){
+  .logo{
+    max-width: 60%;
+  }
+  .products-list li {
+    margin: 2px;
+  }
+  .products-list a {
+    max-width: 15vw;
+    max-height: 12rem;
+   }
+  .products-list img {
+    max-width: 40%;
+    max-height: 40%;
+   }
+   .product-name {
+    font-size: small;
+    font-weight: 400;
+   }
+   .product-price {
+    font-size:large;
+    color: var(--price-color);
+    font-weight: 700;
+    font-style: oblique;
+   }
+}
